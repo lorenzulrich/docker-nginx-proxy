@@ -34,7 +34,16 @@ proxy_set_header X-Forwarded-Proto $proxy_x_forwarded_proto;
 server {
 	listen 80 default_server;
 	server_name _; # This is just an invalid value which will never trigger on a real hostname.
-	return 503;
+
+	error_page 503 /proxy-maintenance-error.html;
+
+	location /proxy-maintenance-error.html {
+		root /etc/nginx/error_pages/;
+	}
+
+	location / {
+		return 503;
+	}
 }
 
 {{ range $host, $containers := groupByMulti $ "Env.VIRTUAL_HOST" "," }}

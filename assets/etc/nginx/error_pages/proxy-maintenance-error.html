@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Maintenance</title>
+		<meta name="description" content="Maintenance page">
+		<meta http-equiv="refresh" content="10">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			body {
+				font-family: verdana, arial, sans-serif;
+				font-size: 0.8em;
+			}
+			.box {
+				border: 1px solid #999;
+				padding: 10px 30px 20px;
+				width:50%;
+				max-width: 700px;
+				min-width: 300px;
+				margin: 20px auto;
+				-webkit-box-shadow: 0 10px 6px -6px #777;
+				-moz-box-shadow: 0 10px 6px -6px #777;
+				box-shadow: 0 10px 6px -6px #777;
+				position: relative;
+			}
+			h1 {
+				color: #444444;
+				font-size: 1.6em;
+			}
+			.browserupgrade {
+				font-size: 1.2em;
+				margin-bottom:0;
+			}
+			.browserupgrade, .browserupgrade a {
+				color: #D90000;
+			}
+			.de {
+				background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjYwMCIgdmlld0JveD0iMCAwIDUgMyI+DQo8cGF0aCBkPSJtMCwwaDV2M2gtNXoiLz4NCjxwYXRoIGZpbGw9IiNkMDAiIGQ9Im0wLDFoNXYyaC01eiIvPg0KPHBhdGggZmlsbD0iI2ZmY2UwMCIgZD0ibTAsMmg1djFoLTV6Ii8+DQo8L3N2Zz4NCg==") repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+				height: 60%;
+				width: 100%;
+			}
+			.fr {
+				background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj4NCjxwYXRoIGZpbGw9IiNlZDI5MzkiIGQ9Im0wLDBoOTAwdjYwMGgtOTAweiIvPg0KPHBhdGggZmlsbD0iI2ZmZiIgZD0ibTAsMGg2MDB2NjAwaC02MDB6Ii8+DQo8cGF0aCBmaWxsPSIjMDAyMzk1IiBkPSJtMCwwaDMwMHY2MDBoLTMwMHoiLz4NCjwvc3ZnPg0K") repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+				height: 66.6667%;
+				width: 100%;
+			}
+			.gb {
+				background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNjAgMzAiIGhlaWdodD0iNjAwIj4NCjxkZWZzPg0KPGNsaXBQYXRoIGlkPSJ0Ij4NCjxwYXRoIGQ9Im0zMCwxNWgzMHYxNXp2MTVoLTMwemgtMzB2LTE1enYtMTVoMzB6Ii8+DQo8L2NsaXBQYXRoPg0KPC9kZWZzPg0KPHBhdGggZmlsbD0iIzAwMjQ3ZCIgZD0ibTAsMHYzMGg2MHYtMzB6Ii8+DQo8cGF0aCBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiIgZD0ibTAsMGw2MCwzMG0wLTMwbC02MCwzMCIvPg0KPHBhdGggc3Ryb2tlPSIjY2YxNDJiIiBzdHJva2Utd2lkdGg9IjQiIGQ9Im0wLDBsNjAsMzBtMC0zMGwtNjAsMzAiIGNsaXAtcGF0aD0idXJsKCN0KSIvPg0KPHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIiBkPSJtMzAsMHYzMG0tMzAtMTVoNjAiLz4NCjxwYXRoIHN0cm9rZT0iI2NmMTQyYiIgc3Ryb2tlLXdpZHRoPSI2IiBkPSJtMzAsMHYzMG0tMzAtMTVoNjAiLz4NCjwvc3ZnPg0K") repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+				height: 50%;
+				width: 100%;
+			}
+			.it {
+				background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjEwMDAiIHZpZXdCb3g9IjAgMCAzIDIiPg0KPHBhdGggZmlsbD0iIzAwOTI0NiIgZD0ibTAsMGgxdjJoLTF6Ii8+DQo8cGF0aCBmaWxsPSIjZmZmIiBkPSJtMSwwaDF2MmgtMXoiLz4NCjxwYXRoIGZpbGw9IiNjZTJiMzciIGQ9Im0yLDBoMXYyaC0xeiIvPg0KPC9zdmc+DQo=") repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+				height: 66.6667%;
+				width: 100%;
+			}
+			.flag {
+				position:absolute;
+				display: block;
+				width: 25px;
+				height: 15px;
+				right: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<span class="flag gb"></span>
+			<h1>This service is currently not available</h1>
+			<p>A maintenance task is taking place, the service will be back soon</p>
+			<!--[if lt IE 8]>
+				<p class="browserupgrade">
+				You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+				</p>
+			<![endif]-->
+		</div>
+		<div class="box">
+			<span class="flag de"></span>
+			<h1> Dieser Service ist derzeit nicht verfügbar </h1>
+			<p>Eine Wartungsaufgabe wird durchgeführt. Der Dienst wird bald wieder verfügbar sein.</p>
+			<!--[if lt IE 8]>
+			<p class="browserupgrade">
+			Sie verwenden einen <strong> veralteten </strong> Browser. <a href="http://browsehappy.com/">Bitte aktualisieren Sie Ihren Browser</a>, um das Surf-Erlebnis zu verbessern.
+			</p>
+			<![endif]-->
+		</div>
+		<div class="box">
+			<span class="flag fr"></span>
+			<h1> Ce service est actuellement indisponible </h1>
+			<p> Une opération de maintenance est en cours, le service sera bientôt à nouveau en ligne </p>
+			<!--[if lt IE 8]>
+			<p class="browserupgrade">
+			Vous utilisez un navigateur qui n'est <strong>pas à jour</strong>. Veuillez s'il vous plaît <a href="http://browsehappy.com/"> faire une mise à jour</a> de votre navigateur pour améliorer votre expérience.
+			</p>
+			<![endif]-->
+		</div>
+		<div class="box">
+			<span class="flag it"></span>
+			<h1> Questo servizio è attualmente disponibile </h1>
+			<p> Un intervento di manutenzione è in corso, il servizio sarà di nuovo presto </p>
+			<!--[if lt IE 8]>
+			<p class="browserupgrade">
+			Si sta utilizzando un <strong> obsolete </strong> del browser. <a Href="http://browsehappy.com/"> aggiornare il browser </a> per migliorare la vostra esperienza.
+			</p>
+			<![endif]-->
+		</div>
+	</body>
+</html>
