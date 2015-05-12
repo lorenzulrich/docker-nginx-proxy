@@ -120,8 +120,15 @@ server {
 	include {{ printf "/etc/nginx/vhost.d/%s" $host }};
 	{{ end }}
 
+	error_page 502 503 504 /proxy-maintenance-error.html;
+
+	location /proxy-maintenance-error.html {
+		root /etc/nginx/error_pages/;
+	}
+
 	location / {
 		proxy_pass {{ $proto }}://{{ $host }};
+		proxy_intercept_errors on;
 		{{ if (exists (printf "/etc/nginx/htpasswd/%s" $host)) }}
 		auth_basic	"Restricted {{ $host }}";
 		auth_basic_user_file	{{ (printf "/etc/nginx/htpasswd/%s" $host) }};
@@ -137,8 +144,15 @@ server {
 	include {{ printf "/etc/nginx/vhost.d/%s" $host }};
 	{{ end }}
 
+	error_page 502 503 504 /proxy-maintenance-error.html;
+
+	location /proxy-maintenance-error.html {
+		root /etc/nginx/error_pages/;
+	}
+
 	location / {
 		proxy_pass {{ $proto }}://{{ $host }};
+		proxy_intercept_errors on;
 		{{ if (exists (printf "/etc/nginx/htpasswd/%s" $host)) }}
 		auth_basic	"Restricted {{ $host }}";
 		auth_basic_user_file	{{ (printf "/etc/nginx/htpasswd/%s" $host) }};
